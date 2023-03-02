@@ -67,3 +67,54 @@ p {
   margin-bottom: 1rem;
 
 }
+
+/* Unordered list style */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: left;
+    color: #333;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+  }
+  
+  ul li:before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    color: #666;
+  }
+  
+  /* Ordered list style */
+  ol {
+    list-style: none;
+    counter-reset: my-counter;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ol li {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: left;
+    color: #333;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  ol li:before {
+    content: counter(my-counter) ".";
+    counter-increment: my-counter;
+    position: absolute;
+    left: 0;
+    color: #666;
+  }
+  
