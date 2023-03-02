@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Tags</title>
+</head>
+<body>
+    <h2>Form</h2>
+    <form action="backend.php">
+        <label for="n"> Name</label>
+        <div>
+            <input type="name" id="n">
+        </div>
+        <br>
+        <label for="ln"> Last Name</label>
+        <div>
+            <input type="name" id="ln">
+        </div>
+        <br>
+        <label for="fn"> Father Name</label>
+        <div>
+            <input type="name" id="fn">
+        </div>
+        <br>
+        <label for="e"> Email</label>
+        <div>
+            <input type="email" name="Email" id="e">
+        </div>
+        <br>
+        <label for="pn"> Phono No</label>
+        <div>
+            <input type="tel" name="Phoneno" id="pn">
+        </div>
+        <br>
+        <label for="gn">Gender</label>
+        <div>
+            <select name="Mygender" id="gn">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other" selected>Other</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+        </div>
+        <br>
+        <div>
+            Write about yourself? <br><textarea name="ta" cols="30" rows="10"></textarea>
+        </div>
+
+    </form>
+</body>
+</html>
